@@ -15,6 +15,7 @@ questionary = "^2.0.1"
 
 [tool.poetry.scripts]
 "s3-bucket-ssl-requests-only" = "aws_config_rule_fixer.s3_bucket_ssl_requests_only:main"
+"ec2-ebs-encryption-by-default" = "aws_config_rule_fixer.ec2_ebs_encryption_by_default:main"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.1.11"
