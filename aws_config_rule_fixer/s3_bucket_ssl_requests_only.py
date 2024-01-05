@@ -31,7 +31,7 @@ def get_policy(bucket: str) -> dict[str, Any]:
 
 
 @click.command()
-def main():
+def main() -> None:
     """does the thing"""
     buckets = get_all_buckets()
 

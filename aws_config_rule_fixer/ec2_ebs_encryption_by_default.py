@@ -6,7 +6,7 @@ from loguru import logger
 from aws_config_rule_fixer import get_all_regions
 
 
-def main():
+def main() -> None:
     regions = get_all_regions()
     for region in regions:
         client = boto3.client("ec2", region_name=region)

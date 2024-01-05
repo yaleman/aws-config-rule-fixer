@@ -23,6 +23,7 @@ ec2-ebs-encryption-by-default = "aws_config_rule_fixer.ec2_ebs_encryption_by_def
 ruff = "^0.1.11"
 mypy = "^1.8.0"
 pytest = "^7.4.4"
+types-boto3 = "^1.0.2"
 
 [build-system]
 requires = [

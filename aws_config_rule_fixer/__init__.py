@@ -1,4 +1,4 @@
-from typing import Generator
+from typing import Any, Generator
 import boto3
 
 
@@ -9,7 +9,7 @@ def get_all_regions() -> list[str]:
     return [region["RegionName"] for region in client.describe_regions()["Regions"]]
 
 
-def get_all_buckets() -> Generator[dict[str, str], None, None]:
+def get_all_buckets() -> Generator[dict[str, Any], None, None]:
     """returns all bucket names across all regions"""
     # for region in get_all_regions():
     region = "us-east-1"
