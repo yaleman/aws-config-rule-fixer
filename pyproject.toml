@@ -14,10 +14,14 @@ pydantic = "^2.5.3"
 click = "^8.1.7"
 loguru = "^0.7.2"
 questionary = "^2.0.1"
+tomli = "^2.0.1"
+tomli-w = "^1.0.0"
 
 [tool.poetry.scripts]
-s3-bucket-ssl-requests-only = "aws_config_rule_fixer.s3_bucket_ssl_requests_only:main"
-ec2-ebs-encryption-by-default = "aws_config_rule_fixer.ec2_ebs_encryption_by_default:main"
+s3-bucket-ssl-requests-only = "aws_config_rule_fixer.fixes.s3_bucket_ssl_requests_only:main"
+ec2-ebs-encryption-by-default = "aws_config_rule_fixer.fixes.ec2_ebs_encryption_by_default:main"
+aws-config-rule-fixer = "aws_config_rule_fixer.__main__:cli"
+cloud-trail-log-file-validation-enabled = "aws_config_rule_fixer.fixes.cloud_trail_log_file_validation_enabled:main"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.1.11"
