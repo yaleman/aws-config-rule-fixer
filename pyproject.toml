@@ -24,7 +24,7 @@ aws-config-rule-fixer = "aws_config_rule_fixer.__main__:cli"
 cloud-trail-log-file-validation-enabled = "aws_config_rule_fixer.fixes.cloud_trail_log_file_validation_enabled:main"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.1.11"
+ruff = "^0.1.13"
 mypy = "^1.8.0"
 pytest = "^7.4.4"
 types-boto3 = "^1.0.2"
