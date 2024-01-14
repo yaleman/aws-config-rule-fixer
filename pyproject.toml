@@ -2,9 +2,7 @@
 name = "aws-config-rule-fixer"
 version = "0.1.0"
 description = ""
-authors = [
-    "James Hodgkinson <james@terminaloutcomes.com>",
-]
+authors = ["James Hodgkinson <james@terminaloutcomes.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -22,6 +20,8 @@ s3-bucket-ssl-requests-only = "aws_config_rule_fixer.fixes.s3_bucket_ssl_request
 ec2-ebs-encryption-by-default = "aws_config_rule_fixer.fixes.ec2_ebs_encryption_by_default:main"
 aws-config-rule-fixer = "aws_config_rule_fixer.__main__:cli"
 cloud-trail-log-file-validation-enabled = "aws_config_rule_fixer.fixes.cloud_trail_log_file_validation_enabled:main"
+check-ec2-imdsv2 = "aws_config_rule_fixer.checks.check_ec2_imdsv2:main"
+
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.1.13"
@@ -30,9 +30,7 @@ pytest = "^7.4.4"
 types-boto3 = "^1.0.2"
 
 [build-system]
-requires = [
-    "poetry-core",
-]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [project]
@@ -40,6 +38,4 @@ name = "aws-config-rule-fixer"
 description = ""
 version = "0.1.0"
 readme = "README.md"
-authors = [
-    { name = "James Hodgkinson", email = "james@terminaloutcomes.com" },
-]
+authors = [{ name = "James Hodgkinson", email = "james@terminaloutcomes.com" }]
