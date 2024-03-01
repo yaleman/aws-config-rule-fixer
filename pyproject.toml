@@ -27,7 +27,7 @@ check-ec2-imdsv2 = "aws_config_rule_fixer.checks.check_ec2_imdsv2:main"
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.3.0"
 mypy = "^1.8.0"
-pytest = "^8.0.1"
+pytest = "^8.0.2"
 types-boto3 = "^1.0.2"
 
 [build-system]
