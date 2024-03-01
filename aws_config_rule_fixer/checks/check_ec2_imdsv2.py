@@ -7,7 +7,7 @@ from loguru import logger
 
 
 @click.command()
-def main():
+def main() -> None:
     for region in get_all_regions():
         client = boto3.client("ec2", region_name=region)
         response = client.describe_instances()
