@@ -18,6 +18,7 @@ tomli-w = "^1.0.0"
 [tool.poetry.scripts]
 s3-bucket-ssl-requests-only = "aws_config_rule_fixer.fixes.s3_bucket_ssl_requests_only:main"
 ec2-ebs-encryption-by-default = "aws_config_rule_fixer.fixes.ec2_ebs_encryption_by_default:main"
+ec2-default-rule-egress-removal = "aws_config_rule_fixer.fixes.ec2_default_rule_egress_removal:main"
 aws-config-rule-fixer = "aws_config_rule_fixer.__main__:cli"
 cloud-trail-log-file-validation-enabled = "aws_config_rule_fixer.fixes.cloud_trail_log_file_validation_enabled:main"
 check-ec2-imdsv2 = "aws_config_rule_fixer.checks.check_ec2_imdsv2:main"
