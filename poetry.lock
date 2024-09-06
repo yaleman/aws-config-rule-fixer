@@ -32,13 +32,13 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "boto3-stubs"
-version = "1.35.10"
-description = "Type annotations for boto3 1.35.10 generated with mypy-boto3-builder 7.26.1"
+version = "1.35.13.post1"
+description = "Type annotations for boto3 1.35.13 generated with mypy-boto3-builder 8.0.1"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "boto3_stubs-1.35.10-py3-none-any.whl", hash = "sha256:2c18c95acc7f13fd17ab48d309bcaeaffa7ac4ee3cccb600a027af62c0718da6"},
-    {file = "boto3_stubs-1.35.10.tar.gz", hash = "sha256:29e7ab85fa7ecff571f696f8ca36034d56c7694b394f97b5f0ed1f2424935959"},
+    {file = "boto3_stubs-1.35.13.post1-py3-none-any.whl", hash = "sha256:7be9a5006d623092f45c19d06000f99cf39e84d7e4002efb0b91a7db25429aaf"},
+    {file = "boto3_stubs-1.35.13.post1.tar.gz", hash = "sha256:8a88a189d37c3323dff6b5a6cfe1fe9b1f4c219512837300e581716e46d0eaea"},
 ]
 
 [package.dependencies]
@@ -475,7 +475,7 @@ bedrock-agent = ["mypy-boto3-bedrock-agent (>=1.35.0,<1.36.0)"]
 bedrock-agent-runtime = ["mypy-boto3-bedrock-agent-runtime (>=1.35.0,<1.36.0)"]
 bedrock-runtime = ["mypy-boto3-bedrock-runtime (>=1.35.0,<1.36.0)"]
 billingconductor = ["mypy-boto3-billingconductor (>=1.35.0,<1.36.0)"]
-boto3 = ["boto3 (==1.35.10)", "botocore (==1.35.10)"]
+boto3 = ["boto3 (==1.35.13)", "botocore (==1.35.13)"]
 braket = ["mypy-boto3-braket (>=1.35.0,<1.36.0)"]
 budgets = ["mypy-boto3-budgets (>=1.35.0,<1.36.0)"]
 ce = ["mypy-boto3-ce (>=1.35.0,<1.36.0)"]
@@ -583,6 +583,7 @@ forecastquery = ["mypy-boto3-forecastquery (>=1.35.0,<1.36.0)"]
 frauddetector = ["mypy-boto3-frauddetector (>=1.35.0,<1.36.0)"]
 freetier = ["mypy-boto3-freetier (>=1.35.0,<1.36.0)"]
 fsx = ["mypy-boto3-fsx (>=1.35.0,<1.36.0)"]
+full = ["boto3-stubs-full"]
 gamelift = ["mypy-boto3-gamelift (>=1.35.0,<1.36.0)"]
 glacier = ["mypy-boto3-glacier (>=1.35.0,<1.36.0)"]
 globalaccelerator = ["mypy-boto3-globalaccelerator (>=1.35.0,<1.36.0)"]
@@ -6765,4 +6766,4 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "fff74c9161775f1bf7e08c5f1eceab3bedf8c29a9e1d428e4dbeb001aa0f55ae"
+content-hash = "abfccea1a953d198353e884c2db8866d4f78bc35bd8847a98b145742ab2513f9"
