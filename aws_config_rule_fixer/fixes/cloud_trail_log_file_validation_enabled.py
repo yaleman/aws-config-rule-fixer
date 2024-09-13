@@ -40,3 +40,7 @@ def main() -> None:
                     logger.error("Failed to update {}: {}", trail_arn, error)
                     sys.exit(1)
                 logger.success("Enabled LogFileValidationEnabled for {}", trail_arn)
+
+
+if __name__ == "__main__":
+    main()

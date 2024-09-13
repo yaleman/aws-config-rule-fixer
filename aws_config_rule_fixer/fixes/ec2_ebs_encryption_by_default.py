@@ -20,3 +20,7 @@ def main() -> None:
             )
             sys.exit(1)
     logger.info("All set on {}", ",".join(regions))
+
+
+if __name__ == "__main__":
+    main()

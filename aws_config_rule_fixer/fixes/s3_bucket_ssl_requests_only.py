@@ -87,3 +87,7 @@ def main() -> None:
             )
             logger.info("new policy: {}", json.dumps(new_policy))
             logger.info("existing policy: {}", json.loads(policy))
+
+
+if __name__ == "__main__":
+    main()

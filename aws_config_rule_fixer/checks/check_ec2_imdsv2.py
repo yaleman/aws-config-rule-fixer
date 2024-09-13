@@ -1,4 +1,4 @@
-""" This should be a config rule but sometimes you just have to check manually... """
+"""This should be a config rule but sometimes you just have to check manually..."""
 
 from aws_config_rule_fixer import get_all_regions
 import boto3
@@ -31,3 +31,7 @@ def main() -> None:
                     logger.error(
                         "IMDSv2 is not enforced on {} in {}", instance_id, region
                     )
+
+
+if __name__ == "__main__":
+    main()

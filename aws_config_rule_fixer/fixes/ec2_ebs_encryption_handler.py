@@ -13,3 +13,7 @@ def main(region: Optional[str] = None) -> None:
     """ " does things"""
 
     logger.info("Using region: {}", region)
+
+
+if __name__ == "__main__":
+    main()

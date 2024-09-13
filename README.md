@@ -4,7 +4,7 @@
 
 ## Installation
 
-Clone the repo, create a venv and `pip install .`, or `poetry install && poetry run <scriptname>`
+Clone the repo, create a venv and `pip install .`, or `uv run <scriptname>`
 
 ## Fixes
 
