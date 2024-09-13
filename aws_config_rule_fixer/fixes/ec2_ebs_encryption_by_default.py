@@ -1,7 +1,7 @@
 import boto3
 import sys
 
-from loguru import logger  # type: ignore
+from loguru import logger
 
 from aws_config_rule_fixer import get_all_regions
 
