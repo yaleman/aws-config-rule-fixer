@@ -1,7 +1,7 @@
 [project]
 authors = [{ name = "James Hodgkinson", email = "james@terminaloutcomes.com" }]
 name = "aws-config-rule-fixer"
-version = "0.1.0"
+version = "0.2.0"
 description = "AWS configuration fixes to match config rules"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -23,3 +23,12 @@ dev-dependencies = [
     "ruff>=0.6.5",
     "types-boto3>=1.0.2",
 ]
+
+[project.scripts]
+check-ec2-imdsv2 = "aws_config_rule_fixer.checks.check_ec2_imdsv2:main"
+
+cloud-trail-log_file_validation_enabled = "aws_config_rule_fixer.fixes.cloud_trail_log_file_validation_enabled:main"
+ec2-default-rule_egress-removal = "aws_config_rule_fixer.fixes.ec2_default_rule_egress_removal:main"
+ec2-ebs-encryption-by-default = "aws_config_rule_fixer.fixes.ec2_ebs_encryption_by_default:main"
+ec2-ebs-encryption-handler = "aws_config_rule_fixer.fixes.ec2_ebs_encryption_handler:main"
+s3-bucket-ssl-requests_only = "aws_config_rule_fixer.fixes.s3_bucket_ssl_requests_only:main"
