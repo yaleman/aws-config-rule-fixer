@@ -32,3 +32,7 @@ ec2-default-rule_egress-removal = "aws_config_rule_fixer.fixes.ec2_default_rule_
 ec2-ebs-encryption-by-default = "aws_config_rule_fixer.fixes.ec2_ebs_encryption_by_default:main"
 ec2-ebs-encryption-handler = "aws_config_rule_fixer.fixes.ec2_ebs_encryption_handler:main"
 s3-bucket-ssl-requests_only = "aws_config_rule_fixer.fixes.s3_bucket_ssl_requests_only:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
